@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg bg-primary bg-gradient navbar-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <component src="/parts/logo"></component>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/">Start</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a active-if-url-starts-with="/photos" class="nav-link dropdown-toggle" href="#" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="ux-books">UX</a></li>
+            <li><a class="dropdown-item" href="html-books">HTML</a></li>
+            <li><a class="dropdown-item" href="css-books">CSS</a></li>
+            <li><a class="dropdown-item" href="javascript-books">JAVASCRIPT</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="photos-portraits">Portraits</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="input-group">
+        <input type="search" class="form-control" placeholder="Search anything...">
+        <button type="button" class="btn btn-primary">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>

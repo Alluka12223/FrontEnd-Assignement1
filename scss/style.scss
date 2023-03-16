@@ -1,0 +1,48 @@
+@import 'google-fonts';
+@import 'variable-overrides';
+@import 'bootstrap/scss/bootstrap';
+@import 'sticky-footer';
+
+
+// Add extra top margin to the first row
+// in the main element
+// because our navbar is fixed
+main .row:first-of-type {
+  margin-top: 80px;
+}
+
+.input-group{
+  padding-left: 50%;
+}
+
+// Some styling for photos
+// the height in viewports widths
+// helps keeping nice proportions
+.photo {
+  // 100% of parent element (col):s width
+  width: 100%;
+  // make the image the same height as it width
+  // (a new property, added to css in 2022)
+  aspect-ratio: 1 / 1;
+  // do not scale the image unproportionally
+  // instead cut off part of it,
+  // (same prinicple as background-size: cover
+  // for background images)
+  object-fit: cover;
+}
+
+// A 'fake' logo
+.logo {
+  font-family: 'Carter One';
+  display: inline-block;
+  margin-top: -5px;
+}
+
+// More margin/space between the logo and
+// the menu when not hamburger-menu
+// (on bigger screens)
+@media only screen and (min-width: 992px) {
+  .logo {
+    margin-right: 40px;
+  }
+}
