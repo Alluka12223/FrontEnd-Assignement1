@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "Responsive design with Bootstrap",
+    "author": "Don Norman",
+    "url": "https://source.unsplash.com/random/?books",
+    "category": "UX",
+    "price": "€5,07",
+    "description": "lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum"
+  },
+  {
+    "id": 2,
+    "title": "HTML - an introduction",
+    "author": "Booth Lloyds",
+    "url": "https://source.unsplash.com/random/?books",
+    "category": "HTML",
+    "price": "€23,87",
+    "description": "quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis"
+  },
+  {
+    "id": 3,
+    "title": "CSS - an introduction",
+    "author": "Caroline Malyan",
+    "url": "https://source.unsplash.com/random/?books",
+    "category": "CSS",
+    "price": "€29,38",
+    "description": "dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam"
+  },
+  {
+    "id": 4,
+    "title": "JavaScript - an introduction",
+    "author": "Selinda Dunks",
+    "url": "https://source.unsplash.com/random/?books",
+    "category": "JAVASCRIPT",
+    "price": "€13,58",
+    "description": "mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac"
+  },
+  {
+    "id": 5,
+    "title": "The Design of Everyday Things",
+    "author": "Don Norman",
+    "url": "https://img1.od-cdn.com/ImageType-100/4575-1/%7B85EA00CF-F096-4068-8876-960C1075ED20%7DImg100.jpg",
+    "category": "UX",
+    "price": "€5,07",
+    "description": "lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum"
+  },
+  {
+    "id": 6,
+    "title": "Hooked: How to Build Habit-Forming Products",
+    "author": "Nir Eyal",
+    "url": "https://img.wook.pt/images/hooked-nir-eyal/MXwyNDc3ODYzMXwyMDk1OTc0MHwxNjMxNTE5MzQ0MDAw/500x",
+    "category": "UX",
+    "price": "€13,94",
+    "description": "nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna"
+  },
+  {
+    "id": 7,
+    "title": "100 Things Every Designer Needs to Know About People",
+    "author": "Susan M. Weinschenk",
+    "url": "https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6924f1e0-25b7-42a7-9a82-04cd2a56f7bf_380x520.png",
+    "category": "UX",
+    "price": "€14,14",
+    "description": "mi pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing"
+  },
+  {
+    "id": 8,
+    "title": "Universal Principles of Design",
+    "author": "William Lidwell",
+    "url": "https://www.dymocks.com.au/Pages/ImageHandler.ashx?q=9780760375167&w=&h=570",
+    "category": "UX",
+    "price": "€15,80",
+    "description": "vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu"
+  },
+  {
+    "id": 9,
+    "title": "HTML5 Pocket Reference: Quick, Comprehensive, Indispensable",
+    "author": "Jennifer Robbins",
+    "url": "https://sun9-75.userapi.com/impf/c626727/v626727285/18927/WM9ijzcn_xQ.jpg?size=596x797&quality=96&sign=de89877c9593f93b4f95fa8ecb30edb8&c_uniq_tag=rz5R1DCIYxhE0gqg1WF2ow6PE3hrc6cwCwrVgVsKbBs&type=album",
+    "category": "HTML",
+    "price": "€10,022",
+    "description": "ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend"
+  },
+  {
+    "id": 10,
+    "title": "HTML in Easy Steps: An Indispensable Guide",
+    "author": "Mike McGrath",
+    "url": "https://ineasysteps.com/wp-content/uploads/2022/01/9781840788761-scaled.jpg",
+    "category": "HTML",
+    "price": "€9,29",
+    "description": "lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus"
+  },
+  {
+    "id": 11,
+    "title": "HTML5: Up and Running",
+    "author": "Mark Pilgrim",
+    "url": "https://learning.oreilly.com/library/cover/9781449392154/250w/",
+    "category": "HTML",
+    "price": "€41,16",
+    "description": "ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse"
+  },
+  {
+    "id": 12,
+    "title": "Web Development & Design Foundations with HTML5",
+    "author": "Terry Felke-Morris",
+    "url": "https://aalbc.com/bookcovers/9780133571783.jpg",
+    "category": "HTML",
+    "price": "€29,70",
+    "description": "ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at"
+  },
+  {
+    "id": 13,
+    "title": "CSS Cookbook 3e",
+    "author": "Christopher Schmitt",
+    "url": "https://cdn.mall.adeptmind.ai/https%3A%2F%2Ftarget.scene7.com%2Fis%2Fimage%2FTarget%2FGUEST_1f3991db-f1af-4ead-a556-5c78abb61340%3Fwid%3D1000%26hei%3D1000_large.jpg",
+    "category": "CSS",
+    "price": "€38,20",
+    "description": "suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in"
+  },
+  {
+    "id": 14,
+    "title": "Modern CSS: Master the Key Concepts of CSS for Modern Web Development",
+    "author": "Joe Attardi",
+    "url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/613RepCSccL._AC_UF1000,1000_QL80_.jpg",
+    "category": "CSS",
+    "price": "€35,37",
+    "description": "sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt"
+  },
+  {
+    "id": 15,
+    "title": "CSS Master",
+    "author": "Tiffany B Brown",
+    "url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61ezS4NLT-L._AC_UF1000,1000_QL80_.jpg",
+    "category": "CSS",
+    "price": "€24,12",
+    "description": "lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui"
+  },
+  {
+    "id": 16,
+    "title": "CSS in Depth",
+    "author": "Keith J. Grant",
+    "url": "https://images.manning.com/book/1/05a18b1-751e-4bcd-9d61-71757f0d2d54/Grant-CSS-HI.png",
+    "category": "CSS",
+    "price": "€31,33",
+    "description": "enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus"
+  },
+  {
+    "id": 17,
+    "title": "Eloquent JavaScript, 3rd Edition: A Modern Introduction to Programming",
+    "author": "Marijn Haverbeke",
+    "url": "https://www.booktopia.com.au/covers/600/9781593279509/0000/eloquent-javascript-3rd-edition.jpg",
+    "category": "JAVASCRIPT",
+    "price": "€31,81",
+    "description": "justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt"
+  },
+  {
+    "id": 18,
+    "title": "JavaScript - The Definitive Guide",
+    "author": "David Flanagan",
+    "url": "https://image.bokus.com/images/9781491952023_200x_javascript-the-definitive-guide",
+    "category": "JAVASCRIPT",
+    "price": "€23,24",
+    "description": "sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas"
+  },
+  {
+    "id": 19,
+    "title": "Head First JavaScript Programming: A Brain-Friendly Guide",
+    "author": "Eric Freeman",
+    "url": "https://m.media-amazon.com/images/I/519dx5KHv-L._SX430_BO1,204,203,200_.jpg",
+    "category": "JAVASCRIPT",
+    "price": "€23,20",
+    "description": "et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus"
+  },
+  {
+    "id": 20,
+    "title": "A Smarter Way to Learn JavaScript",
+    "author": "Mark Myers",
+    "url": "https://m.media-amazon.com/images/I/41SuGbUqZTL._SX348_BO1,204,203,200_.jpg",
+    "category": "JAVASCRIPT",
+    "price": "€48,40",
+    "description": "non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus"
+  }
+]
