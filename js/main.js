@@ -4,7 +4,7 @@
 // import the main scss file: the scss will compile to css
 // and hot reload on changes thanks to Vite
 import '../scss/style.scss';
-
+import { getJSON } from './utils/getJson';
 // import bootstrap JS part
 import * as bootstrap from 'bootstrap';
 
@@ -95,6 +95,9 @@ async function loadPage(src = location.pathname) {
   componentMount();
   // set active link in navbar
   setActiveLinkInNavbar();
+  if (window.location.pathname === "/books") {
+    start();
+  }
 }
 
 // set the correct link active in navbar match on
@@ -112,6 +115,57 @@ function setActiveLinkInNavbar() {
   }
   oldActive && oldActive.classList.remove('active');
   newActive && newActive.classList.add('active');
+}
+
+let allBook;
+let bookItem;
+
+let authorFilter = 'All';
+let categoryFilter = "All"
+let priceFilter = "All"
+let sort = "None";
+
+let authors = [];
+let categories = []
+
+function displayBooks() {
+  let bookFilter = filterAll();
+  bookItem = bookFilter.map(({ id, title, author, url, category, description, price }) => /*html*/ `
+  
+    <div class="col-md-3">
+      <div class="photo hovering-box">
+        <img src="${url}" class="img-fluid" alt=${title}>
+        <div class="overlay">
+          <div class="col">
+            <h5 class="font-weight-bolder">${title} | ${category}</h5>
+              <p>Author: ${author}</p>
+              <p>${price}</p>
+              
+              <button type="button" class="btn btn-outline-primary read-more" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id=${id}>
+              Read More
+              </button>
+              
+              <button href="#start" class="btn btn-primary add-to-basket" data-id=${id}>
+                Add to Cart
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    `
+  )
+  document.querySelector(".allBooks").innerHTML = bookItem.join("")
+}
+
+function filterAll() {
+  let filteredBooks
+  filteredBooks = allBook.filter(({ author, category, price }) => (authorFilter === "All" || authorFilter === author))
+  return filteredBooks
+}
+
+async function start() {
+  allBook = await getJSON('/book-data.json')
+  displayBooks()
 }
 
 // initially, on hard load/reload:
