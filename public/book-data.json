@@ -2,38 +2,38 @@
   {
     "id": 1,
     "title": "Responsive design with Bootstrap",
-    "author": "Don Norman",
+    "author": "Jasmin Akter Chowdhury",
     "url": "https://source.unsplash.com/random/?books",
     "category": "UX",
     "price": "52.07",
-    "description": "lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum"
+    "description": "Responsive design is an approach to web development that ensures a consistent user experience across different devices and screen sizes. It aims to adapt the layout and content of a website or web application to provide a seamless interaction whether users are on desktops, tablets, or smartphones. Bootstrap is a popular front-end framework that facilitates responsive design by providing a collection of pre-designed HTML, CSS, and JavaScript components. It simplifies the process of creating responsive web pages through a grid system and responsive classes. The grid system divides the layout into rows and columns which alows the developers to arrange content in a flexible manner that automatically adjusts based on screen size. With Bootstrap, developers can utilize responsive classes to control the visibility, alignment, and spacing of elements for different devices. This eliminates the need for writing custom media queries for every screen size. By working with Bootstrap's responsive features, designers and developers can create websites that look and function well on a wide range of devices, improving user engagement and accessibility."
   },
   {
     "id": 2,
     "title": "HTML - an introduction",
-    "author": "Booth Lloyds",
+    "author": "Jasmin Akter Chowdhury",
     "url": "https://source.unsplash.com/random/?books",
     "category": "HTML",
     "price": "23.87",
-    "description": "quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis"
+    "description": "This book provides a foundational overview of HyperText Markup Language (HTML), the standard language used to create and structure content on the World Wide Web. This introduction covers the essential concepts of HTML, including its role in web development, basic structure of HTML documents using tags, elements, and attributes, and how these components work together to display text, images, links, and other multimedia elements in web browsers. As the fundamental building block of web pages, HTML knowledge is crucial for anyone looking to understand the structure and layout of online content. HTML operates on a hierarchical structure, where elements are nested within each other to create a logical arrangement of content. Each HTML document begins with a declaration and usually contains a <head> section for metadata like page title and linked resources, as well as a <body> section for the main content visible to users. HTML is the core language for structuring web content, forming the backbone upon which web pages are built, while CSS and JavaScript complement it to create visually appealing and interactive online experiences."
   },
   {
     "id": 3,
     "title": "CSS - an introduction",
-    "author": "Caroline Malyan",
+    "author": "Jasmin Akter Chowdhury",
     "url": "https://source.unsplash.com/random/?books",
     "category": "CSS",
     "price": "29.38",
-    "description": "dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam"
+    "description": "CSS, or Cascading Style Sheets, is a fundamental technology used in web development to control the visual presentation and layout of HTML documents. It serves as a styling language that defines how elements on a web page should be displayed, including aspects like fonts, colors, spacing, positioning, and responsive design for various devices. CSS operates by applying styles to HTML elements, allowing developers to separate the structure and content of a webpage from its visual design. This separation enhances flexibility, as changes to the design can be made without altering the underlying content. One of the key features of CSS is its ability to handle different screen sizes and devices, achieved through responsive design techniques. This ensures that websites look and function well on various platforms, from desktops to smartphones and tablets. These features empower developers to create sophisticated and interactive web designs. CSS is a pivotal tool in web development that enables designers and developers to control the visual aspects of websites, creating engaging and user-friendly online experiences."
   },
   {
     "id": 4,
     "title": "JavaScript - an introduction",
-    "author": "Selinda Dunks",
+    "author": "Jasmin Akter Chowdhury",
     "url": "https://source.unsplash.com/random/?books",
     "category": "JAVASCRIPT",
     "price": "13.58",
-    "description": "mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac"
+    "description": "JavaScript is a versatile and widely-used programming language primarily utilized for web development. Initially developed to add interactivity and dynamic behavior to websites, it has evolved into a multi-purpose language capable of both frontend and backend tasks. As a client-side language, it runs directly in web browsers, enabling features like form validation, animations, and real-time updates without requiring page reloads. Moreover, with the advent of server-side frameworks like Node.js, JavaScript can also be used to create powerful server applications. Its syntax is similar to other programming languages, making it accessible for both beginners and experienced developers. JavaScript is the backbone of interactive web development, enabling programmers to imbue websites and applications with dynamic features that captivate users. Its evolution from a browser-specific scripting language to a versatile, full-stack tool showcases its enduring relevance and influence in shaping the digital landscape."
   },
   {
     "id": 5,
