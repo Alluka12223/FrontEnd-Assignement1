@@ -39,6 +39,34 @@
         <div class="row allBooks"></div>
       </div>
 
+      <!-- detailed view of books modal  -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+          <div class="modal-content">
+
+            <!-- header -->
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 book-title-main" id="exampleModalLabel"></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- body -->
+            <div class="modal-body">
+              <div class="clearfix">
+                <div class="book-cover"></div>
+                <h2 class="book-title"></h2>
+                <h3>By <span class="book-author"></span></h3>
+                <p>Price: <span class="book-price"></span> SEK</p>
+                <p class="book-category"></p>
+                <p class="book-description"></p>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>

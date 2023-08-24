@@ -4,6 +4,7 @@
 // import the main scss file: the scss will compile to css
 // and hot reload on changes thanks to Vite
 import '../scss/style.scss';
+import './shopping-cart-main';
 import { getJSON } from './utils/getJson';
 // import bootstrap JS part
 import * as bootstrap from 'bootstrap';
@@ -157,16 +158,147 @@ function displayBooks() {
   document.querySelector(".allBooks").innerHTML = bookItem.join("")
 }
 
+// function addFilters() {
+//   document.querySelector(".filters").innerHTML = /*html*/ `
+//     <label><span>Filter by </span>
+//       <select class="filter">
+//         <option>category</option>
+//         <option>author</option>
+//         <option>price</option>
+//       </select> :
+//       <select class="filteringCondition">
+//         <option>all</option>
+//         ${categories.map((category) => `<option>${category}</option>`).join("")}
+//       </select>
+//     </label>
+//   `;
+// }
+
 function filterAll() {
   let filteredBooks
-  filteredBooks = allBook.filter(({ author, category, price }) => (authorFilter === "All" || authorFilter === author))
+  if (priceFilter === "All") {
+    filteredBooks = allBook.filter(({ author, category, price }) => (authorFilter === "All"
+      || author.includes(authorFilter))
+      && (categoryFilter === "All" || categoryFilter === category)
+      && (priceFilter === "All"))
+
+
+  } else if (priceFilter === "1000+ SEK") {
+    filteredBooks = allBook.filter(({ author, category, price }) => (authorFilter === "All"
+      || author.includes(authorFilter))
+      && (categoryFilter === "All" || categoryFilter === category)
+      && (price > 1000))
+
+  } else {
+    let min = priceFilter.split(" ")[0]
+    let max = priceFilter.split(" ")[2]
+    filteredBooks = allBook.filter(({ author, category, price }) => (authorFilter === "All"
+      || author.includes(authorFilter))
+      && (categoryFilter === "All" || categoryFilter === category)
+      && (price >= min && price < max))
+  }
+
   return filteredBooks
+} 
+
+function getCategories() {
+  let allCategory = allBook.map(book => book.category)
+  categories = [...new Set(allCategory)]
+  console.log('sort', categories.sort())
+
+}
+
+function cateSort() {
+  getCategories();
+  document.querySelector(".category-filtering").innerHTML = /*html*/`
+  <label> Category:
+  <select class="categoryFilter form-select" aria-label="Category">
+  <option>All</option>
+  ${categories.map(category => `<option> ${category} </option>`).join("")}
+  </select>
+  </label>
+  `;
+
+  document.querySelector(".categoryFilter").addEventListener('change', event => {
+    categoryFilter = event.target.value;
+    // let filteredBooks = allBook.filter(({category}) => (categoryFilter === "All" || categoryFilter === category))
+    displayBooks()
+  })
+}
+
+function getAuthors() {
+  let allAuth = allBook.map(book => book.author)
+  authors = [...new Set(allAuth)]
+  console.log('sort', authors.sort())
+
+}
+
+function authSort() {
+  getAuthors();
+  document.querySelector(".author-filtering").innerHTML = /*html*/`
+  <label> Author:
+  <select class="authorFilter form-select" aria-label="Category">
+  <option>All</option>
+  ${authors.map(author => `<option> ${author} </option>`).join("")}
+  </select>
+  </label>
+  `;
+
+  document.querySelector(".authorFilter").addEventListener('change', event => {
+    authorFilter = event.target.value;
+    // let filteredBooks = allBook.filter(({category}) => (categoryFilter === "All" || categoryFilter === category))
+    displayBooks()
+  })
+}
+
+function priceSort() {
+  document.querySelector(".price-filtering").innerHTML = /*html*/`
+    <label> Price:
+      <select class="priceFilter form-select" aria-label="Price">
+        <option>All</option>
+        <option>0</option>
+        <option>26 - 50 SEK</option>
+        <option>51 - 75 SEK</option>
+        <option>100+ SEK</option>
+      </select>
+    </label>
+    `;
+
+  document.querySelector(".priceFilter").addEventListener('change', event => {
+    priceFilter = event.target.value;
+    displayBooks()
+  })
 }
 
 async function start() {
   allBook = await getJSON('/book-data.json')
   displayBooks()
+  // addFilters()
+  cateSort()
+  authSort()
+  priceSort()
 }
+
+$('body').addEventListener('click', event => {
+  console.log("button clicked")
+  let readMore = event.target.closest('.read-more')
+  if (readMore) {
+    const id = Number(readMore.getAttribute("data-id"))
+    let b = allBook.filter(b => b.id === id)
+    console.log('b', b)
+    // document.querySelector('.book-title-main').innerHTML = b[0].title;
+    document.querySelector('.book-title').innerHTML = b[0].title;
+    document.querySelector('.book-author').innerHTML = b[0].author;
+    document.querySelector('.book-description').innerHTML = b[0].description;
+    document.querySelector('.book-category').innerHTML = b[0].category;
+    document.querySelector('.book-price').innerHTML = b[0].price;
+    let cover = `<img src=${b[0].url} alt=${b[0].title}
+    class="col-sm-12 col-lg-5 float-md-end mb-3 ms-md-3">`
+    document.querySelector('.book-cover').innerHTML = cover;
+    let addButton = `<button type="button" data-id=${id} class="btn btn-primary add-to-basket-2">Add to Basket</button>`
+    document.querySelector('.modal-footer').innerHTML = addButton
+  }
+})
 
 // initially, on hard load/reload:
 // mount components and load the page
