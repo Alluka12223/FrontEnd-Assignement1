@@ -158,22 +158,6 @@ function displayBooks() {
   document.querySelector(".allBooks").innerHTML = bookItem.join("")
 }
 
-// function addFilters() {
-//   document.querySelector(".filters").innerHTML = /*html*/ `
-//     <label><span>Filter by </span>
-//       <select class="filter">
-//         <option>category</option>
-//         <option>author</option>
-//         <option>price</option>
-//       </select> :
-//       <select class="filteringCondition">
-//         <option>all</option>
-//         ${categories.map((category) => `<option>${category}</option>`).join("")}
-//       </select>
-//     </label>
-//   `;
-// }
-
 function filterAll() {
   let filteredBooks
   if (priceFilter === "All") {
@@ -221,7 +205,6 @@ function cateSort() {
 
   document.querySelector(".categoryFilter").addEventListener('change', event => {
     categoryFilter = event.target.value;
-    // let filteredBooks = allBook.filter(({category}) => (categoryFilter === "All" || categoryFilter === category))
     displayBooks()
   })
 }
@@ -246,7 +229,6 @@ function authSort() {
 
   document.querySelector(".authorFilter").addEventListener('change', event => {
     authorFilter = event.target.value;
-    // let filteredBooks = allBook.filter(({category}) => (categoryFilter === "All" || categoryFilter === category))
     displayBooks()
   })
 }
@@ -273,7 +255,6 @@ function priceSort() {
 async function start() {
   allBook = await getJSON('/book-data.json')
   displayBooks()
-  // addFilters()
   cateSort()
   authSort()
   priceSort()
@@ -286,7 +267,6 @@ $('body').addEventListener('click', event => {
     const id = Number(readMore.getAttribute("data-id"))
     let b = allBook.filter(b => b.id === id)
     console.log('b', b)
-    // document.querySelector('.book-title-main').innerHTML = b[0].title;
     document.querySelector('.book-title').innerHTML = b[0].title;
     document.querySelector('.book-author').innerHTML = b[0].author;
     document.querySelector('.book-description').innerHTML = b[0].description;
